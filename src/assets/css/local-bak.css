@@ -1,0 +1,214 @@
+html {
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('./assets/fonts/Avenir-Light.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/Avenir-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./assets/fonts/Avenir-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./assets/fonts/Avenir-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('./assets/fonts/Avenir-Light.svg#Avenir-Light') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+    font-family: "Avenir 35 Light", "Arial", "sans-serif";
+    line-height: 1.50;
+    color: #999;
+    /*background: transparent;*/
+    padding-top: 50px;
+    background: #000 url('/assets/images/bg-body.jpg') repeat-x top center;
+    background-attachment: fixed;
+
+}
+
+.color1 {
+    color: #999;
+}
+
+.color2 {
+    color: #2AB2B2;
+}
+
+.color3 {
+    color: #E0DA22;
+}
+
+a {
+    color: #6c98f3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a {
+    color: #6c98f3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: lowercase;
+}
+
+h1 {
+    font-size: 2.0em;
+    color: #2AB2B2;
+}
+
+h2 {
+    font-size: 1.75em;
+    color: #90cd32;
+}
+
+h3 {
+    color: #d2dc58;
+    font-size: 1.25em;
+}
+
+h4 {
+    color: #90cd32;
+    font-size: 1.0em;
+}
+
+nav {
+    z-index:5000;
+}
+.navbar-inverse {
+    background: #cdeb8e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cdeb8e 0%, #90cd32 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cdeb8e 0%,#90cd32 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #cdeb8e 0%,#90cd32 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#90cd32',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #000;
+    background: none;
+    z-index: 5100;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background: #cdeb8e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #90cd32 0%, #cdeb8e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #90cd32 0%,#cdeb8e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #90cd32 0%,#cdeb8e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#90cd32',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar-inverse .navbar-nav>li>a.active {
+    color: #fff;
+    background: #cdeb8e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #90cd32 0%, #cdeb8e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #90cd32 0%,#cdeb8e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #90cd32 0%,#cdeb8e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#90cd32',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar-inverse .navbar-brand {
+    color: #000;
+    background: none;
+    font-size: 1.75em;
+}
+
+footer {
+
+    width: 100%;
+    border-top: 1px solid #9d9d9d;
+    background: #222;
+    padding: 10px;
+    z-index: 1030;
+}
+
+footer ul li {
+
+}
+
+.bg-1 {
+    background-color: #000;
+    border-radius: 7px 7px 7px 7px;
+    rgba(0, 0, 0, 0.3) background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+    background: rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-bottom: 1px solid #111111;
+    border-top: 1px solid #5A5A5A;
+    border-left: 1px solid #5A5A5A;
+    border-bottom: 1px solid #222;
+    border-right: 1px solid #222;
+    -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition: box-shadow 150ms ease-in-out 0s;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.page-top {
+    /*padding-top: 14px;*/
+}
+
+
+
+footer {
+    position: relative;
+    min-height: 50px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .navbar-nav > li > a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .navbar-brand {
+        float: left;
+        height: 44px;
+        padding: 23px 15px;
+    }
+
+    footer {
+        position: fixed;
+        min-height: 150px;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .page-bottom {
+        padding-bottom: 150px;
+    }
+
+    .page-top {
+        padding-top: 24px;
+    }
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+}
+
+

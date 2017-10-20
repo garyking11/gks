@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+
+footer {
+  background: #333;
+  color: #fff;
+  height: 50px;
+  padding: 20px 0;
+  text-align: center;
+    margin-top: 40px;
+}
+
+.heading {
+  background: #666;
+  color: #fff;
+  padding: 10px;
+}
+.article {
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+}

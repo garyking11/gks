@@ -1,0 +1,61 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="dashboard-heading"><a class="cursor-pointer" [routerLink]="['home']"
+                                          [routerLinkActive]="['active']">Dashboard</a></div>
+
+        <ul class="list-unstyled list-inline site-current-metadata">
+            <li>{{ account }}</li>
+            <!--<li>{{product_type}}</li>-->
+        </ul>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+
+
+        <form [formGroup]="selectSiteMetadataForm" (ngSubmit)="onSetSiteData();">
+
+            <!-- Select site -->
+            <ul class="list-unstyled list-inline">
+                <li>
+                    <select id="account" class="form-control" formControlName="account" name="account">
+                        <option [ngClass]="{'hide': selectSiteMetadataForm.account === 'Select Account'}" value="">
+                            Select Site
+                        </option>
+                        <option style="color: #0099cc;" *ngFor="let dir of localDirectories"
+                                value="{{dir}}">{{dir}}
+                        </option>
+                    </select>
+                </li>
+
+                <li>
+                    <button class="btn btn-primary"
+                            type="submit"
+                            [disabled]="!selectSiteMetadataForm.valid ||  account ===  selectSiteMetadataForm.controls['account'].value">
+                        Load Site
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </form>
+
+        </div><!-- end col1 -->
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12" style="padding-left: 0;">
+
+            <dev-create-seed></dev-create-seed>
+
+        </div><!-- end col2 -->
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+
+         &nbsp;
+
+        </div><!-- end col3 -->
+
+    </div><!-- End row -->
+
+</div><!-- end container -->

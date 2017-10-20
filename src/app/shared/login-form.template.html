@@ -1,0 +1,32 @@
+
+
+    <div (click)="toggle()" style="cursor: pointer;" *ngIf="!isAuth()">Login</div>
+    <div style="cursor: pointer;" *ngIf="isAuth()">Logged in</div>
+
+        <div [hidden]="!visible">
+
+            <!--{{ visible ? '&blacktriangledown;' : '&blacktriangleright;' }} Details-->
+
+            <form id="logForm" [formGroup]="myForm" (ngSubmit)="onSignin()" *ngIf="!isAuth()">
+
+
+                    <ul class="form-group list-unstyled">
+                    <li class="">
+                        <label for="email">E-Mail</label>
+                        <input formControlName="email" type="email" id="email" class="form-control">
+                    </li>
+                    <li class="">
+                        <label for="password">Password</label>
+                        <input formControlName="password" type="password" id="password" class="form-control">
+                    </li>
+                    <li>
+                        <button type="submit" [disabled]="!myForm.valid" class="btn btn-primary">Sign In</button>
+                    </li>
+                </ul>
+
+            </form>
+
+
+
+    </div>
+
